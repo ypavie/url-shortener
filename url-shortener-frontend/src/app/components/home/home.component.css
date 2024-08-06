@@ -1,0 +1,53 @@
+.container {
+  max-width: 65%;
+  margin-top: 150px;
+}
+
+.heading {
+  font-weight: 300;
+  font-style: normal;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.input-field {
+  border: 1px solid black;
+}
+
+.form-container {
+  padding: 1rem;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between link and button */
+}
+
+.result-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.result-link:hover {
+  text-decoration: underline;
+}
+
+.copy-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.copy-button i {
+  font-size: 1.25rem; /* Adjust icon size as needed */
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}

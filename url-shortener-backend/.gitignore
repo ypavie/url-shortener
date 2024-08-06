@@ -1,0 +1,68 @@
+# Spring Boot
+target/
+*.jar
+*.war
+*.class
+*.log
+*.properties
+
+# Spring Boot specific files
+spring-boot-app/
+!.mvn/wrapper/mvnw
+!.mvn/wrapper/mvnw.cmd
+
+# Angular
+node_modules/
+dist/
+*.log
+*.env
+.angular/
+*.tsbuildinfo
+
+# Docker
+docker-compose.override.yml
+.docker/
+*.dockerfile
+*.dockerignore
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Misc
+*.DS_Store
+*.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS specific
+Thumbs.db
+Desktop.ini
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven
+*.pom
+*.jar
+*.war
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+
+# Database
+*.sqlite
+*.db
+*.sql

@@ -1,0 +1,33 @@
+<div class="container text-center mx-auto py-5">
+    <h1 class="heading mb-5">
+        URL Shortener
+    </h1>
+
+    <form class="form-container" [formGroup]="form" (submit)="send()">
+        <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+                <input type="text" class="form-control input-field" id="inputField"
+                    placeholder="https://urlexample.com/DH7ERR8A" formControlName="url">
+                <button type="submit" class="btn btn-primary mt-3" [disabled]="!form.valid">Convert</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" *ngIf="noUrl">
+                <div class="alert alert-danger mx-auto mt-3" role="alert">
+                    Enter a valid url
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row mt-5" *ngIf="shortUrl">
+        <div class="col-12">
+            <div class="result-container mx-auto">
+                <a href="{{ shortUrl }}" class="result-link" target="_blank">{{ shortUrl }}</a>
+                <button class="btn btn-outline-secondary copy-button" (click)="copyToClipboard()">
+                    <i class="bi bi-clipboard"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
